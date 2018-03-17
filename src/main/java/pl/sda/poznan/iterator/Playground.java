@@ -8,6 +8,7 @@ public class Playground {
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Piotr", "Jan", "Ala");
 
+
         System.out.println("Pętla for each .....");
         for (String s : names) {
             System.out.println(s);
@@ -25,5 +26,18 @@ public class Playground {
 //            String s = names.get(i);
 //            System.out.println(s);
 //        }
+
+        //z uzyciem własnego iteratora
+        MyCollection imiona = new MyCollection();
+        imiona.addElement("Piotr");
+        imiona.addElement("Paweł");
+        imiona.addElement("Karolina");
+
+        pl.sda.poznan.iterator.Iterator<String> imionaIterator = imiona.getIterator();
+        while(imionaIterator.hasNextElement()){
+            String elem = imionaIterator.getNextElement();
+            System.out.println(elem);
+        }
+
     }
 }

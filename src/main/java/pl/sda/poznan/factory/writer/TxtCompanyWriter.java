@@ -34,7 +34,7 @@ public class TxtCompanyWriter implements CompanyWriter {
             //metoda write przyjmuje scieżkę do pliku i Iterable<? exends CharSequence>
             //drugi zapis oznacza że możemy tutaj podać listę ale tylko taką
             //która przechowuje typ dziedziczony poa CharSequence np. String
-            Files.write(Paths.get(path),strings);
+                Files.write(Paths.get(path),strings);
         } catch (IOException e) {
             e.printStackTrace();
         }

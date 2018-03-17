@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<company>
+    <empolyees>
+        <email>nowak@gmail</email>
+        <name>Jan</name>
+        <salary>10000.0</salary>
+        <surname>Nowak</surname>
+    </empolyees>
+    <empolyees>
+        <email>kowalski@gmail</email>
+        <name>Jan</name>
+        <salary>8000.0</salary>
+        <surname>KOwalski</surname>
+    </empolyees>
+</company>

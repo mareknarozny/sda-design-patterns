@@ -35,7 +35,7 @@ public class Stock extends Observable<Stock> {
     }
 
     public void setPriceWithValidation (double price){
-        double oldPrice = price;
+        double oldPrice = this.price;
         this.price = price;
         if(oldPrice != this.price){
             propertyChanged(new PropertyChangedEventArgs<>(this, "price", this.price, oldPrice));
